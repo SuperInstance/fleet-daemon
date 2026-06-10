@@ -1,0 +1,16 @@
+# Fleet Daemon Configuration
+# https://github.com/SuperInstance/fleet-daemon
+
+agent_id: oracle2-worker
+broker_url: wss://broker.hivemq.com:8000/mqtt
+repo_url: https://github.com/SuperInstance/onboard
+repo_dir: /tmp/fleet-workdir
+
+git_poll_interval: 5
+log_level: INFO
+
+# MQTT Topics
+task_topic: fleet/tasks
+log_topic: fleet/logs
+status_topic: fleet/agent/status
+announce_topic: fleet/agents
